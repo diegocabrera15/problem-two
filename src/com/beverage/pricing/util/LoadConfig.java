@@ -12,21 +12,14 @@ public class LoadConfig {
 
     public ArrayList<Product> loadConfigProducts(){
         ArrayList<Product> products = new ArrayList<>();
-        products.add(new Product("A", 0.52, 0.80, MarkupType.PERCENTAGE.name(),  0));
-        products.add(new Product("B", 0.38, 1.20, MarkupType.PERCENTAGE.name(), 0.30));
-        products.add(new Product("C", 0.41, 0.90, MarkupType.UNIT.name(), 0));
-        products.add(new Product("D", 0.60, 1.00, MarkupType.UNIT.name(), 0.20));
+        LoadConfigTest.LoadConfigProductTest(products);
 
         return products;
     }
 
     public ArrayList<Customer> loadConfigCustomers(){
         ArrayList<Customer> customers = new ArrayList<>();
-        customers.add(new Customer(1, 0.05, 0.00, 0.02));
-        customers.add(new Customer(2, 0.04, 0.01, 0.02));
-        customers.add(new Customer(3, 0.03, 0.01, 0.03));
-        customers.add(new Customer(4, 0.02, 0.03, 0.05));
-        customers.add(new Customer(5, 0.00, 0.05, 0.07));
+        LoadConfigTest.LoadConfigCustomerTest(customers);
 
         return customers;
     }
